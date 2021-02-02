@@ -1,0 +1,253 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4,
+.pimg5 {
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.pimg1 {
+  background-image: url(../images/sky.jpg);
+  min-height: 100vh;
+}
+
+.pimg2 {
+  background-image: url(../images/coast.jpg);
+  min-height: 800px;
+}
+
+.pimg3 {
+  background-image: url(../images/block.jpg);
+  min-height: 800px;
+}
+
+.pimg4 {
+  background-image: url(../images/citybridge.jpg);
+  min-height: 800px;
+}
+
+.pimg5 {
+  background-image: url(../images/feather.jpg);
+  min-height: 800px;
+}
+
+.section-lt {
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-drk {
+  background-color: #282e34;
+  color: #ddd;
+  text-align: center;
+  padding: 100px 100px;
+  font-family: "Varela Round", sans-serif;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .brd {
+  background-color: #111;
+  color: white;
+  padding: 20px;
+  font-family: "Varela Round", sans-serif;
+}
+
+.ptext .brd .trans {
+  background-color: transparent;
+  font-family: "Varela Round", sans-serif;
+}
+
+.section.section-lt {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Varela Round", sans-serif;
+  color: #838488;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.section.section-lt .Title__page {
+  text-align: left;
+  position: absolute;
+  top: 30%;
+  padding-left: 150px;
+}
+.section.section-lt .h1 {
+  z-index: 2;
+}
+
+.jack {
+  background-image: linear-gradient(#c668f2, #7c95f1);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.rectangle1 {
+  position: relative;
+  left: 80%;
+  top: 70%;
+  width: 2038px;
+  height: 155.97px;
+  background: linear-gradient(180deg, #BE6AD3 0%, #7C95F1 100%);
+  border-radius: 201px;
+  transform: rotate(-35deg);
+  opacity: 0.3;
+}
+
+.rectangle2 {
+  position: relative;
+  left: 52.5%;
+  top: 100px;
+  width: 1233.8px;
+  height: 150.8px;
+  background: linear-gradient(180deg, #BE6AD3 0%, #7C95F1 100%);
+  border-radius: 201px;
+  transform: rotate(-35deg);
+  opacity: 0.3;
+}
+
+.rectangle3 {
+  position: relative;
+  left: 145%;
+  top: -500px;
+  width: 1233.8px;
+  height: 150.8px;
+  background: linear-gradient(180deg, #BE6AD3 0%, #7C95F1 100%);
+  border-radius: 201px;
+  transform: rotate(-35deg);
+  opacity: 0.3;
+}
+
+[class^=col] {
+  padding: 15px;
+  min-height: 150px;
+  border-radius: 5px;
+}
+
+img {
+  height: 100px;
+  width: 100;
+}
+
+h3 {
+  font-family: "Varela Round", sans-serif;
+  font-size: 26px;
+  color: #CACBCE;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0;
+}
+
+nav ul {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  width: 100%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 100px rgba(255, 255, 255, 0.6);
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 50px;
+}
+
+nav ul li a {
+  padding: 20px;
+  font-family: "Varela Round", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
+  font-weight: bold;
+  font-size: 26px;
+  text-decoration: none;
+  display: block;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(195, 194, 194, 0.1);
+  color: #c668f2;
+}
+
+/* Markup */
+body {
+  color: #000;
+  margin: 0;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+}
+.content p {
+  margin: 0 0 20px;
+}
+
+/* Arrow & Hover Animation */
+#more-arrows {
+  width: 75px;
+  height: 65px;
+}
+#more-arrows:hover polygon {
+  fill: #FFF;
+  transition: all 0.2s ease-out;
+}
+#more-arrows:hover polygon.arrow-bottom {
+  transform: translateY(-18px);
+}
+#more-arrows:hover polygon.arrow-top {
+  transform: translateY(18px);
+}
+
+polygon {
+  fill: #FFF;
+  transition: all 0.2s ease-out;
+}
+polygon.arrow-middle {
+  opacity: 0.75;
+}
+polygon.arrow-top {
+  opacity: 0.5;
+}

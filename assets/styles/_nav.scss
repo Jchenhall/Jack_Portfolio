@@ -1,0 +1,58 @@
+@import "_variability.scss";
+@import "_typography.scss";
+
+nav {
+ position: fixed;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  mask-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    #ffffff 25%,
+    #ffffff 75%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  margin: 0;
+}
+
+
+nav ul {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  width: 100%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+    inset 0 0 100px rgba(255, 255, 255, 0.6);
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 50px;
+}
+
+nav ul li a {
+  padding: 20px;
+  font-family: $primaryfont-family;
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
+  font-weight: bold;
+  font-size: $font-L;
+  text-decoration: none;
+  display: block;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1),
+    inset 0 0 1px rgba(255, 255, 255, 0.6);
+
+  background: rgba(195, 194, 194, 0.1);
+
+  color: $primary-color;
+}

@@ -1,0 +1,182 @@
+@import "_variability.scss";
+@import "_typography.scss";
+
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4,
+.pimg5 {
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+}
+
+.pimg1 {
+  background-image: url(../images/sky.jpg);
+  min-height: 100vh;
+ 
+}
+
+.pimg2 {
+  background-image: url(../images/coast.jpg);
+  min-height: 800px;
+}
+
+.pimg3 {
+  background-image: url(../images/block.jpg);
+  min-height: 800px;
+}
+
+.pimg4 {
+  background-image: url(../images/citybridge.jpg);
+  min-height: 800px;
+}
+
+.pimg5 {
+  background-image: url(../images/feather.jpg);
+  min-height: 800px;
+}
+.section-lt {
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-drk {
+  background-color: #282e34;
+  color: #ddd;
+  text-align: center;
+  padding: 100px 100px;
+  font-family: $primaryfont-family;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .brd {
+background-color: #111;
+color: white;
+padding: 20px;
+font-family: $primaryfont-family;
+}
+
+.ptext .brd .trans {
+    background-color: transparent;
+    font-family: $primaryfont-family;
+}
+//title page
+.section.section-lt {
+position: relative;
+//margin-top: -100px;
+width: 100vw;
+height: 100vh;
+//
+//
+  font-family: $primaryfont-family;
+  color: $four-color;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+.Title__page {
+text-align: left;
+position: absolute;
+top: 30%;
+
+padding-left: 150px;
+}
+
+.h1{
+  z-index: 2;
+}
+
+}
+
+
+.jack {
+  background-image: linear-gradient($primary-color, $secondary-color);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+
+.rectangle1 {
+position: relative; left: 80%; top: 70%;
+width: 2038px;
+height: 155.97px;
+background: linear-gradient(180deg, #BE6AD3 0%, #7C95F1 100%);
+border-radius: 201px;
+transform: rotate(-35deg);
+opacity: 0.3;
+}
+
+.rectangle2 {
+  position: relative; left: 52.5%; top: 100px;
+  width: 1233.8px;
+  height: 150.8px;
+  background: linear-gradient(180deg, #BE6AD3 0%, #7C95F1 100%);
+  border-radius: 201px;
+  transform: rotate(-35deg);
+  opacity: 0.3;
+}
+
+.rectangle3 {
+  position: relative; left: 145%; top: -500px;
+  width: 1233.8px;
+  height: 150.8px;
+  background: linear-gradient(180deg, #BE6AD3 0%, #7C95F1 100%);
+  border-radius: 201px;
+  transform: rotate(-35deg);
+  opacity: 0.3;
+}
+
+
+
+//software section
+
+
+[class^="col"] {
+  padding: 15px;
+  
+  min-height: 150px;
+  border-radius: 5px;
+}
+
+img {
+  height: 100px;
+  width: 100;
+}
+
+  h3{
+    font-family: $primaryfont-family;
+    font-size: $font-L;
+    color: $third-color;
+  }
+
+
+//project area using grid
+
