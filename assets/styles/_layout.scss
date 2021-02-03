@@ -25,6 +25,7 @@ html {
   background-repeat: no-repeat;
 
   background-attachment: fixed;
+  z-index: -1;
 }
 
 .pimg1 {
@@ -55,6 +56,7 @@ html {
 .section-lt {
   background-color: #f4f4f4;
   color: #666;
+  z-index: 1;
 }
 
 .section-drk {
@@ -63,6 +65,7 @@ html {
   text-align: center;
   padding: 100px 100px;
   font-family: $primaryfont-family;
+  z-index: 1;
 }
 
 .ptext {
@@ -74,6 +77,7 @@ html {
   font-size: 27px;
   letter-spacing: 8px;
   text-transform: uppercase;
+  z-index: 1;
 }
 
 .ptext .brd {
@@ -159,24 +163,144 @@ opacity: 0.3;
 //software section
 
 
-[class^="col"] {
-  padding: 15px;
-  
-  min-height: 150px;
-  border-radius: 5px;
-}
+//[class^="col"] {
+//  padding: 15px;
+//  
+//  min-height: 150px;
+//  border-radius: 5px;
+//}
 
-img {
-  height: 100px;
-  width: 100;
-}
+//img {
+//  height: 100px;
+//  width: 100;
+//}
 
-  h3{
-    font-family: $primaryfont-family;
-    font-size: $font-L;
-    color: $third-color;
-  }
+//  h3{
+//    font-family: $primaryfont-family;
+//    font-size: $font-L;
+//    color: $third-color;
+//  }
 
 
 //project area using grid
+.section-sft {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $primaryfont-family;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: #010615;
+  z-index: 1;
+}
+.box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  background: #060c21;
+  transition: 0.5s;
+  z-index: 2;
+}
 
+.box:hover {
+  height: 400px;
+
+}
+
+.box .imgbx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background: #060c21;
+  box-sizing: border-box;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box .imgbx img {
+  max-width: 500px;
+  max-height: 200px ;
+  opacity: 0.1;
+  transition: 0.5s;
+  z-index: 4;
+}
+
+.box:hover .imgbx img {
+  position: relative;
+  opacity: 1;
+  transition: 0.5s;
+  top: -50px;
+  z-index: 4;
+}
+
+.box:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+}
+.box:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+  filter:blur(40px);
+}
+.box:before, .box:after {
+  background: linear-gradient(235deg,#BE6AD3,#010615,#7C95F1);
+}
+
+
+.box .sftcontent {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  height: 90px;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 5;
+}
+.box:hover .sftcontent {
+  opacity: 1;
+}
+
+.box:hover .sftcontent h2 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+.box:hover .sftcontent h2 span {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
