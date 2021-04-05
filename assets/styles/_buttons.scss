@@ -5,7 +5,7 @@ body {
     font-family: "Lucida Console", Monaco, monospace;
   }
   
-  
+ 
   
   .content {
     position: absolute;
@@ -20,10 +20,16 @@ body {
   }
   
   /* Arrow & Hover Animation */
+  .arrowButton {
+    background: none;
+    border: none;
+  }
+
   #more-arrows {
-      width: 75px;
+    width: 75px;
     height: 65px;
-    
+    position: relative;
+
     &:hover {
       
       polygon {

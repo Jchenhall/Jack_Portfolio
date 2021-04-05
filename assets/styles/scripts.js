@@ -6,7 +6,10 @@ toggleButton.addEventListener('click', () => {
    navbarlinks.classList.toggle('active')
 })
 
-
+//scroll arrow svg
+const scrollWin = () => {
+    window.scrollBy(0, 1200);
+  }
 
 //contactform.
 function deleteMessages() {        

@@ -1,10 +1,10 @@
 @import "_variability.scss";
 @import "_typography.scss";
 
-.navbar {
-  position: sticky;
+.navBar {
+  position: fixed;
    width: 100%;
-   z-index: 6;
+   z-index: 18;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,7 +86,7 @@
       width: 100%;
     }
   
-    .navbar { 
+    .navBar { 
       flex-direction: column;
       align-items: flex-start;
     }

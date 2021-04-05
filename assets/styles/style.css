@@ -1,7 +1,7 @@
 body,
 html {
   box-sizing: border-box;
-  height: 100%;
+  height: 100vh;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -290,6 +290,11 @@ html {
   min-height: 100vh;
   background: #010615;
   z-index: 1;
+}
+
+.project__title {
+  color: #acacac;
+  font-family: "Varela Round", sans-serif;
 }
 
 .skillset {
@@ -781,10 +786,10 @@ html {
   background: linear-gradient(235deg, #BE6AD3, #010615, #7C95F1);
 }
 
-.navbar {
-  position: sticky;
+.navBar {
+  position: fixed;
   width: 100%;
-  z-index: 6;
+  z-index: 18;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -859,7 +864,7 @@ html {
     width: 100%;
   }
 
-  .navbar {
+  .navBar {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -899,9 +904,15 @@ body {
 }
 
 /* Arrow & Hover Animation */
+.arrowButton {
+  background: none;
+  border: none;
+}
+
 #more-arrows {
   width: 75px;
   height: 65px;
+  position: relative;
 }
 #more-arrows:hover polygon {
   fill: #FFF;
