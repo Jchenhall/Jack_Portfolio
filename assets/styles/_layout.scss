@@ -4,10 +4,10 @@
 
 body,
 html {
-  // display: flex;
+  display: block;
   box-sizing: border-box;
   height: 100vh;
-  // width: 100vw;
+  width: 100vw;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -133,35 +133,35 @@ padding-left: 150px;
 }
 
 
-.rectangle1 {
-position: relative; left: 80%; top: 70%;
-width: 2038px;
-height: 155.97px;
-background: linear-gradient(180deg, #BE6AD3 0%, #7C95F1 100%);
-border-radius: 201px;
-transform: rotate(-35deg);
-opacity: 0.3;
-}
+// .rectangle1 {
+// position: relative; left: 80%; top: 70%;
+// width: 2038px;
+// height: 155.97px;
+// background: linear-gradient(180deg, #BE6AD3 0%, #7C95F1 100%);
+// border-radius: 201px;
+// transform: rotate(-35deg);
+// opacity: 0.3;
+// }
 
-.rectangle2 {
-  position: relative; left: 52.5%; top: 100px;
-  width: 1233.8px;
-  height: 150.8px;
-  background: linear-gradient(180deg, #BE6AD3 0%, #7C95F1 100%);
-  border-radius: 201px;
-  transform: rotate(-35deg);
-  opacity: 0.3;
-}
+// .rectangle2 {
+//   position: relative; left: 52.5%; top: 100px;
+//   width: 1233.8px;
+//   height: 150.8px;
+//   background: linear-gradient(180deg, #BE6AD3 0%, #7C95F1 100%);
+//   border-radius: 201px;
+//   transform: rotate(-35deg);
+//   opacity: 0.3;
+// }
 
-.rectangle3 {
-  position: relative; left: 145%; top: -500px;
-  width: 1233.8px;
-  height: 150.8px;
-  background: linear-gradient(180deg, #BE6AD3 0%, #7C95F1 100%);
-  border-radius: 201px;
-  transform: rotate(-35deg);
-  opacity: 0.3;
-}
+// .rectangle3 {
+//   position: relative; left: 145%; top: -500px;
+//   width: 1233.8px;
+//   height: 150.8px;
+//   background: linear-gradient(180deg, #BE6AD3 0%, #7C95F1 100%);
+//   border-radius: 201px;
+//   transform: rotate(-35deg);
+//   opacity: 0.3;
+// }
 
 
 
@@ -314,7 +314,27 @@ opacity: 0.3;
 }
 
 //box color and software skills section -- END
+@media ( max-width: 1173px) {
+.box{
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  
+}
+.box:hover {
+  height: 200px;
 
+}
+.box .imgbx {
+  padding:5%;
+}
+
+.box .imgbx img {
+  max-width: 250px;
+  max-height: 100px;
+}
+
+}
 //projects section
 
 .section-sft1 {
@@ -406,6 +426,7 @@ color:rgb(172, 172, 172);
   text-align: center;
   font-weight: bold;
 }
+
 .container .btn{
   background-color: darkgrey;
   border: none;
